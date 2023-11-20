@@ -513,6 +513,7 @@ func verifyDeviceRequest(t *testing.T, device Device, req api.DeviceRequest) {
 	assert.Equal(t, device.Name, req.VirtualDeviceName, "Name matches")
 	assert.ElementsMatch(t, device.Notifications, req.Notifications, "Notifications matches")
 	assert.Equal(t, device.HostName, req.HostNamePrefix, "HostName matches")
+	assert.Equal(t, device.LicenseCategory, req.LicenseCategory, "LicenseCategory matches")
 	assert.Equal(t, device.OrderReference, req.OrderReference, "OrderReference matches")
 	assert.Equal(t, device.PurchaseOrderNumber, req.PurchaseOrderNumber, "PurchaseOrderNumber matches")
 	assert.Equal(t, device.AccountNumber, req.AccountNumber, "AccountNumber matches")

@@ -370,6 +370,7 @@ func createDeviceRequest(device Device) api.DeviceRequest {
 	req.VirtualDeviceName = device.Name
 	req.Notifications = device.Notifications
 	req.HostNamePrefix = device.HostName
+	req.LicenseCategory = device.LicenseCategory
 	req.OrderReference = device.OrderReference
 	req.PurchaseOrderNumber = device.PurchaseOrderNumber
 	req.AccountNumber = device.AccountNumber

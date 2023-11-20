@@ -16,6 +16,7 @@ type Device struct {
 	PackageCode          *string                `json:"packageCode,omitempty"`
 	Version              *string                `json:"version,omitempty"`
 	LicenseToken         *string                `json:"licenseToken,omitempty"`
+	LicenseCategory      *string                `json:"licenseCategory,omitempty"`
 	LicenseType          *string                `json:"licenseType,omitempty"`
 	LicenseFileID        *string                `json:"licenseFileId,omitempty"`
 	CloudInitFileID      *string                `json:"CloudInitFileId,omitempty"`
@@ -53,6 +54,7 @@ type DeviceRequest struct {
 	TermLength           *string                     `json:"termLength,omitempty"`
 	LicenseMode          *string                     `json:"licenseMode,omitempty"`
 	LicenseToken         *string                     `json:"licenseToken,omitempty"`
+	LicenseCategory      *string                     `json:"licenseCategory,omitempty"`
 	LicenseFileID        *string                     `json:"licenseFileId,omitempty"`
 	CloudInitFileID      *string                     `json:"cloudInitFileId,omitempty"`
 	PackageCode          *string                     `json:"packageCode,omitempty"`
